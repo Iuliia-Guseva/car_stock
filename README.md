@@ -1,32 +1,24 @@
-# React + TypeScript + Vite
+# Car Stock
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple React + TypeScript inventory app for managing a car catalog. The application allows you to view, add, edit, delete, and search vehicles in a dealership or fleet stock.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Display a list of cars from a remote REST API
+- Add a new car with a modal form
+- Edit existing car data
+- Delete cars from stock
+- Search by brand, model, color, fuel type, year, or price
+- Responsive UI built with Material UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- Material UI
+- REST API integration
 
-## Expanding the Oxlint configuration
+## License
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+This project is for educational/demo purposes.
