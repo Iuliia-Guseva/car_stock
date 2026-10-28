@@ -1,0 +1,183 @@
+.app-container.MuiContainer-root {
+  padding: 32px 24px 56px;
+}
+
+.app-bar.MuiAppBar-root {
+  overflow: hidden;
+  border: 1px solid rgba(255, 253, 248, 0.12);
+  border-radius: 18px;
+  background: linear-gradient(115deg, #49382c, #604631);
+  box-shadow: 0 12px 30px rgba(73, 56, 44, 0.18);
+}
+
+.app-toolbar.MuiToolbar-root {
+  min-height: 76px;
+  padding-inline: 28px;
+}
+
+.app-title.MuiTypography-root {
+  color: #fff9ed;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+}
+
+.car-list {
+  margin-top: 30px;
+}
+
+.car-list-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.car-list-heading {
+  margin: 0;
+  color: var(--coffee);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.car-list-caption {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.add-car-button.MuiButton-root {
+  min-height: 44px;
+  padding: 9px 20px;
+  border-radius: 12px;
+  background: var(--caramel);
+  box-shadow: 0 5px 12px rgba(184, 121, 69, 0.2);
+  color: #fffdf8;
+  font-weight: 700;
+  text-transform: none;
+  transition: background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.add-car-button.MuiButton-root:hover {
+  transform: translateY(-1px);
+  background: #9f6335;
+  box-shadow: 0 7px 16px rgba(184, 121, 69, 0.28);
+}
+
+.car-search.MuiFormControl-root {
+  width: min(100%, 360px);
+  margin-bottom: 12px;
+}
+
+.car-grid {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--milk-light);
+  box-shadow: var(--shadow);
+}
+
+.car-grid .MuiDataGrid-root {
+  border: 0;
+  color: var(--coffee);
+}
+
+.car-grid .MuiDataGrid-columnHeaders {
+  border-bottom: 1px solid var(--line);
+  background: #f2eadd;
+  color: var(--coffee);
+  font-weight: 700;
+}
+
+.car-grid .MuiDataGrid-columnHeaderTitle {
+  font-weight: 700;
+}
+
+.car-grid .MuiDataGrid-cell {
+  border-color: #f0e9de;
+}
+
+.car-grid .MuiDataGrid-row:hover {
+  background: #fbf5eb;
+}
+
+.car-grid .MuiDataGrid-footerContainer {
+  border-top: 1px solid var(--line);
+}
+
+.car-grid .MuiDataGrid-overlay {
+  background: var(--milk-light);
+}
+
+.add-car-dialog .MuiPaper-root {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--milk-light);
+  color: var(--coffee);
+  box-shadow: var(--shadow);
+}
+
+.add-car-dialog .MuiDialogTitle-root {
+  padding: 24px 24px 12px;
+  color: var(--coffee);
+  font-weight: 700;
+}
+
+.add-car-dialog .MuiOutlinedInput-root {
+  border-radius: 10px;
+  background: #fffefa;
+}
+
+.add-car-dialog .MuiOutlinedInput-notchedOutline {
+  border-color: var(--milk-dark);
+}
+
+.add-car-dialog .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--caramel);
+}
+
+.add-car-dialog .MuiButton-root {
+  border-radius: 9px;
+  color: var(--coffee-light);
+  font-weight: 700;
+  text-transform: none;
+}
+
+.add-car-dialog .MuiButton-contained {
+  background: var(--caramel);
+  color: #fffdf8;
+}
+
+.add-car-dialog .MuiButton-contained:hover {
+  background: #9f6335;
+}
+
+@media (max-width: 600px) {
+  .app-container.MuiContainer-root {
+    padding: 16px 12px 32px;
+  }
+
+  .app-toolbar.MuiToolbar-root {
+    min-height: 64px;
+    padding-inline: 18px;
+  }
+
+  .car-list {
+    margin-top: 22px;
+  }
+
+  .car-list-toolbar {
+    align-items: flex-start;
+  }
+
+  .car-search.MuiFormControl-root {
+    width: 100%;
+  }
+
+  .car-grid {
+    height: 460px;
+  }
+}
